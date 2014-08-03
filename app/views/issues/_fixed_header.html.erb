@@ -1,0 +1,45 @@
+<div id="fixed-header" class="issue" style="display: none;">
+  <p><%= @issue.tracker %> #<%= @issue.id %> <%= ("( " + @issue.status.name + " )") unless issue.status.nil? %></p>
+  <h3><%= @issue.subject %></h3>
+</div>
+<style type="text/css">
+  #fixed-header{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 75%;
+    min-width: 675px;
+    padding: 5px 10px;
+    border-style: none none solid;
+    box-shadow: 0px 1px 3px #D0D0D0;
+  }
+  #fixed-header p{
+    color: silver;
+    margin: 0px;
+    font-size: 10px;
+  }
+  #fixed-header h3{
+    margin: 0px;
+    padding: 0px;
+    font-size: 14px;
+  }
+</style>
+<script type="text/javascript">
+  (function(){
+    var onScroll = function(){
+      var header = $("div#fixed-header");
+      if(header.is(":hidden")){
+        if($(".subject div h3").offset().top < $(document).scrollTop()){
+          header.show("slide", { direction : "up" }, 200);
+        }
+      }else{
+        if($(".subject div h3").offset().top >= $(document).scrollTop()){
+          header.hide();
+        }
+      }
+    };
+
+    $(window).scroll(onScroll);
+    $(window).load(onScroll);
+  })();
+</script>
