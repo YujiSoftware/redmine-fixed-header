@@ -7,10 +7,9 @@
     position: fixed;
     top: 0px;
     left: 0px;
-    width: 75%;
-    min-width: 675px;
     padding: 5px 10px;
-    border-style: none none solid;
+    margin: 0px;
+    border-top-style: none;
     box-shadow: 0px 1px 3px #D0D0D0;
   }
   #fixed-header p{
@@ -39,7 +38,29 @@
       }
     };
 
-    $(window).scroll(onScroll);
-    $(window).load(onScroll);
+    var onResize = function(){
+      var header = $("div#fixed-header");
+      var content = $("#content");
+      var topMenu = $("#top-menu");
+      header.css("width", content.innerWidth() - parseInt(header.css("paddingLeft")) - parseInt(header.css("paddingRight")));
+      header.css("left", content.position().left);
+      if(topMenu.css("position") == "fixed"){
+        header.css("top", topMenu.outerHeight());
+      }
+
+      header.css("borderLeftWidth", content.css("borderLeftWidth"));
+      header.css("borderLeftColor", content.css("borderLeftColor"));
+      header.css("borderLeftStyle", content.css("borderLeftStyle"));
+      header.css("borderRightWidth", content.css("borderRightWidth"));
+      header.css("borderRightColor", content.css("borderRightColor"));
+      header.css("borderRightStyle", content.css("borderRightStyle"));
+    };
+
+    $(window).load(function(){
+       onResize();
+       onScroll();
+       $(window).resize(onResize);
+       $(window).scroll(onScroll);
+    });
   })();
 </script>
