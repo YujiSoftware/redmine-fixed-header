@@ -1,5 +1,11 @@
 <div id="fixed-header" class="issue" style="display: none;">
-  <p><%= @issue.tracker %> #<%= @issue.id %> <%= ("( " + @issue.status.name + " )") unless issue.status.nil? %></p>
+  <%= render :partial => 'action_menu' %>
+  <p>
+    <%= @issue.tracker %> #<%= @issue.id %>
+    <%= ("( " + @issue.status.name + " )") unless issue.status.nil? %>
+    <%= h(@issue.priority.name) %>
+    <%= avatar(@issue.assigned_to, :size => "14").to_s.html_safe + (@issue.assigned_to ? link_to_user(@issue.assigned_to) : "-") %>
+  </p>
   <h3><%= @issue.subject %></h3>
 </div>
 <style type="text/css">
