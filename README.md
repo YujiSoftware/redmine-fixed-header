@@ -3,7 +3,7 @@ Redmine Fixed Header plugin
 
 This is a plugin for Redmine to show fixed header in issue page.
 
-![Capture](http://hp.vector.co.jp/authors/VA049605/etc/redmine-fixed-header.png) 
+![Capture](http://hp.vector.co.jp/authors/VA049605/etc/redmine-fixed-header2.png) 
 
 Installation
 --------------------
@@ -25,4 +25,4 @@ And restart your http server.
 Requirement
 --------------------
 
-* Redmine 2.1.x or later
+* Redmine 2.1 - 2.6, 3.x or later
