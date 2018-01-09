@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Feature #1: Redmine Fixed Header plugin - Project - Redmine</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="description" content="Redmine">
+<meta name="keywords" content="issue,bug,tracker">
+<meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="Qf1aTrzaIl1wOVcAKQjO3PEVI8f/kX1Tz90/19j5BswiJQEXqm7RTWD+5O3L3SBK+RUT8F/jRXYI2BfcxxVK8w==">
+<link rel="shortcut icon" a href="#">
+<link rel="stylesheet" media="all" href="demo_files/jquery-ui-1.css">
+<link rel="stylesheet" media="all" href="demo_files/application.css">
+<link rel="stylesheet" media="all" href="demo_files/responsive.css">
+
+<script src="demo_files/jquery-1.js"></script>
+<script src="demo_files/application.js"></script>
+<script src="demo_files/responsive.js"></script>
+<script>
+//<![CDATA[
+$(window).load(function(){ warnLeavingUnsaved('The current page contains unsaved text that will be lost if you leave this page.'); });
+//]]>
+</script>
+
+
+<!-- page specific tags -->
+<script src="demo_files/jstoolbar-textile.js"></script><script src="demo_files/jstoolbar-en.js"></script><script>
+//<![CDATA[
+var wikiImageMimeTypes = ["image/gif","image/jpeg","image/png","image/tiff","image/x-ms-bmp"];
+//]]>
+</script><link rel="stylesheet" media="screen" href="demo_files/jstoolbar.css"><script>
+//<![CDATA[
+var datepickerOptions={dateFormat: 'yy-mm-dd', firstDay: 0, showOn: 'button', buttonImageOnly: true, buttonImage: '/images/calendar.png?1500729552', showButtonPanel: true, showWeek: true, showOtherMonths: true, selectOtherMonths: true, changeMonth: true, changeYear: true, beforeShow: beforeShowDatePicker};
+//]]>
+</script>  <script src="demo_files/attachments.js"></script>
+    <link rel="alternate" type="application/atom+xml" title="Project - Feature #1: Redmine Fixed Header plugin" a href="#">
+<script src="demo_files/context_menu.js"></script><link rel="stylesheet" media="screen" href="demo_files/context_menu.css"></head>
+<body class="project-project controller-issues action-show">
+
+<div id="wrapper">
+
+<div class="flyout-menu js-flyout-menu">
+
+
+        <div class="flyout-menu__search">
+            <form action="/projects/project/search" accept-charset="UTF-8" method="get"><input name="utf8" value="✓" type="hidden">
+            <input name="issues" value="1" type="hidden">
+            <label class="search-magnifier search-magnifier--flyout" for="flyout-search">⚲</label>
+            <input name="q" id="flyout-search" class="small js-search-input" placeholder="Search" type="text">
+</form>        </div>
+
+        <div class="flyout-menu__avatar flyout-menu__avatar--no-avatar">
+            <a class="user active" a href="#">admin</a>
+        </div>
+
+        <h3>Project</h3>
+        <span class="js-project-menu"></span>
+
+    <h3>General</h3>
+    <span class="js-general-menu"></span>
+
+    <span class="js-sidebar flyout-menu__sidebar"></span>
+
+    <h3>Profile</h3>
+    <span class="js-profile-menu"></span>
+
+</div>
+
+<div id="wrapper2">
+<div id="wrapper3">
+<div id="top-menu">
+    <div id="account">
+        <ul><li><a class="my-account" a href="#">My account</a></li><li><a class="logout" rel="nofollow" data-method="post" a href="#">Sign out</a></li></ul>    </div>
+    <div id="loggedas">Logged in as <a class="user active" a href="#">admin</a></div>
+    <ul><li><a class="home" a href="#">Home</a></li><li><a class="my-page" a href="#">My page</a></li><li><a class="projects" a href="#">Projects</a></li><li><a class="administration" a href="#">Administration</a></li><li><a class="help" href="https://www.redmine.org/guide">Help</a></li></ul></div>
+
+<div id="header">
+
+    <a href="#" class="mobile-toggle-button js-flyout-menu-toggle-button"></a>
+
+    <div id="quick-search">
+        <form action="/projects/project/search" accept-charset="UTF-8" method="get"><input name="utf8" value="✓" type="hidden">
+        <input name="scope" type="hidden">
+        <input name="issues" value="1" type="hidden">
+        <label for="q">
+          <a accesskey="4" a href="#">Search</a>:
+        </label>
+        <input name="q" id="q" size="20" class="small" accesskey="f" type="text">
+</form>        <div id="project-jump" class="drdn"><span class="drdn-trigger">Project</span><div class="drdn-content"><div class="quick-search"><input name="q" id="projects-quick-search" class="autocomplete" data-automcomplete-url="/projects/autocomplete.js?jump=issues" autocomplete="off" data-value-was="" type="text"></div><div class="drdn-items projects selection"></div><div class="drdn-items all-projects selection"><a href="#">All Projects</a></div></div></div>
+    </div>
+
+    <h1><span class="current-project">Project</span></h1>
+
+    <div id="main-menu" class="tabs">
+        <ul><li>
+<a id="new-object" onclick="toggleNewObjectDropdown(); return false;" class="new-object" href="#"> + </a>
+<ul class="menu-children"><li><a accesskey="7" class="new-issue-sub" a href="#">New issue</a></li><li><a class="new-issue-category" a href="#">New category</a></li><li><a class="new-version" a href="#">New version</a></li><li><a class="new-timelog" a href="#">Log time</a></li><li><a class="new-news" a href="#">Add news</a></li><li><a class="new-document" a href="#">New document</a></li><li><a class="new-wiki-page" a href="#">New wiki page</a></li><li><a class="new-file" a href="#">New file</a></li></ul>
+</li><li><a class="overview" a href="#">Overview</a></li><li><a class="activity" a href="#">Activity</a></li><li><a class="issues selected" a href="#">Issues</a></li><li><a class="time-entries" a href="#">Spent time</a></li><li><a class="gantt" a href="#">Gantt</a></li><li><a class="calendar" a href="#">Calendar</a></li><li><a class="news" a href="#">News</a></li><li><a class="documents" a href="#">Documents</a></li><li><a class="wiki" a href="#">Wiki</a></li><li><a class="files" a href="#">Files</a></li><li><a class="settings" a href="#">Settings</a></li></ul>
+        <div class="tabs-buttons" style="display:none;">
+            <button class="tab-left" onclick="moveTabLeft(this); return false;"></button>
+            <button class="tab-right" onclick="moveTabRight(this); return false;"></button>
+        </div>
+    </div>
+</div>
+
+<div id="main" class="">
+    <div id="sidebar">
+          <h3>Issues</h3>
+
+<ul>
+<li><a href="#">View all issues</a></li>
+<li><a href="#">Summary</a></li>
+
+<li><a href="#">Import</a></li>
+</ul>
+
+
+
+
+
+
+
+
+    <div id="watchers">
+      <div class="contextual">
+<a data-remote="true" data-method="get" a href="#">Add</a>
+</div>
+
+<h3>Watchers (0)</h3>
+
+
+
+    </div>
+
+        
+    </div>
+
+    <div id="content">
+        
+        <div class="contextual">
+<a onclick='showAndScrollTo("update", "issue_notes"); return false;' class="icon icon-edit" accesskey="e" a href="#">Edit</a>
+<a class="icon icon-time-add" a href="#">Log time</a>
+<a class="issue-1-watcher icon icon-fav-off" data-remote="true" rel="nofollow" data-method="post" a href="#">Watch</a>
+<a class="icon icon-copy" a href="#">Copy</a>
+<a data-confirm="Are you sure you want to delete the selected issue(s)?" class="icon icon-del" rel="nofollow" data-method="delete" a href="#">Delete</a>
+</div>
+
+
+<h2>Feature #1</h2>
+
+<div class="issue tracker-2 status-2 priority-2 priority-default created-by-me details">
+
+  <div class="gravatar-with-child">
+    
+    
+  </div>
+
+<div class="subject">
+<div><h3>Redmine Fixed Header plugin</h3></div>
+</div>
+        <p class="author">
+        Added by <a class="user active" a href="#">Redmine Admin</a> <a title="01/09/2018 02:27 PM" a href="#">13 minutes</a> ago.
+        Updated <a title="01/09/2018 02:39 PM" a href="#">less than a minute</a> ago.
+        </p>
+
+<div class="attributes">
+<div class="splitcontent"><div class="splitcontentleft"><div class="status attribute"><div class="label">Status:</div><div class="value">In Progress</div></div><div class="priority attribute"><div class="label">Priority:</div><div class="value">Normal</div></div><div class="assigned-to attribute"><div class="label">Assignee:</div><div class="value">-</div></div></div><div class="splitcontentleft"><div class="start-date attribute"><div class="label">Start date:</div><div class="value">01/01/2018</div></div><div class="due-date attribute"><div class="label">Due date:</div><div class="value"></div></div><div class="progress attribute"><div class="label">% Done:</div><div class="value"><table class="progress progress-0"><tbody><tr><td style="width: 100%;" class="todo"></td></tr></tbody></table><p class="percent">0%</p></div></div><div class="estimated-hours attribute"><div class="label">Estimated time:</div><div class="value"></div></div></div></div>
+
+
+</div>
+
+<hr>
+<div class="description">
+  <div class="contextual">
+  <a class="icon icon-comment" data-remote="true" rel="nofollow" data-method="post" a href="#">Quote</a>
+  </div>
+
+  <p><strong>Description</strong></p>
+  <div class="wiki">
+  <p>This is a Redmine plugin that displays a fixed header at the top of the screen when scrolling down.</p>
+  </div>
+</div>
+
+
+
+
+<div id="fixed-header" class="issue" style="width: 915px; left: 0px; border-left: 0px none rgb(51, 51, 51); border-right: 1px solid rgb(221, 221, 221); display: none;">
+  <p>Feature #1 ( In Progress )</p>
+  <h3>Redmine Fixed Header plugin</h3>
+  <div class="contextual">
+<a onclick='showAndScrollTo("update", "issue_notes"); return false;' class="icon icon-edit" a href="#">Edit</a>
+<a class="icon icon-time-add" a href="#">Log time</a>
+<a class="issue-1-watcher icon icon-fav-off" data-remote="true" rel="nofollow" data-method="post" a href="#">Watch</a>
+<a class="icon icon-copy" a href="#">Copy</a>
+<a data-confirm="Are you sure you want to delete the selected issue(s)?" class="icon icon-del" rel="nofollow" data-method="delete" a href="#">Delete</a>
+</div>
+
+</div>
+<style type="text/css">
+  #fixed-header{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    padding: 5px 10px;
+    margin: 0px;
+    border-top-style: none;
+    box-shadow: 0px 4px 5px -5px #D0D0D0;
+  }
+  #fixed-header p{
+    color: darkgray;
+    margin: 0px;
+    font-size: 10px;
+  }
+  #fixed-header h3{
+    margin: 3px 0px 0px 0px;
+    padding: 0px;
+    font-size: 14px;
+  }
+  #fixed-header div.contextual{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    margin-top: 5px;
+    margin-right: 5px;
+    opacity: 0.2; 
+    transition: 0.2s ease-out;
+  }
+  #fixed-header:hover div.contextual{
+    opacity: 1;
+  }
+</style>
+<script type="text/javascript">
+  (function(){
+    var onScroll = function(){
+      var header = $("div#fixed-header");
+      if(header.is(":hidden")){
+        if($(".subject div h3").offset().top < $(document).scrollTop()){
+          header.show("slide", { direction : "up" }, 200);
+        }
+      }else{
+        if($(".subject div h3").offset().top >= $(document).scrollTop()){
+          header.hide();
+        }
+      }
+    };
+
+    var onResize = function(){
+      var header = $("div#fixed-header");
+      var content = $("#content");
+      var topMenu = $("#top-menu");
+      header.css("width", content.innerWidth() - parseInt(header.css("paddingLeft")) - parseInt(header.css("paddingRight")));
+      header.css("left", content.position().left);
+      if(topMenu.css("position") == "fixed"){
+        header.css("top", topMenu.outerHeight());
+      }
+
+      header.css("borderLeftWidth", content.css("borderLeftWidth"));
+      header.css("borderLeftColor", content.css("borderLeftColor"));
+      header.css("borderLeftStyle", content.css("borderLeftStyle"));
+      header.css("borderRightWidth", content.css("borderRightWidth"));
+      header.css("borderRightColor", content.css("borderRightColor"));
+      header.css("borderRightStyle", content.css("borderRightStyle"));
+    };
+
+    $(window).load(function(){
+       onResize();
+       onScroll();
+       $(window).resize(onResize);
+       $(window).scroll(onScroll);
+    });
+  })();
+</script>
+
+
+<hr>
+<div id="issue_tree">
+<div class="contextual">
+  <a href="#">Add</a>
+</div>
+<p><strong>Subtasks</strong></p>
+<form data-cm-url="/issues/context_menu" action="/issues/1" accept-charset="UTF-8" method="post"><input name="utf8" value="✓" type="hidden"><input name="authenticity_token" value="Qf1aTrzaIl1wOVcAKQjO3PEVI8f/kX1Tz90/19j5BswiJQEXqm7RTWD+5O3L3SBK+RUT8F/jRXYI2BfcxxVK8w==" type="hidden">
+</form></div>
+
+<hr>
+<div id="relations">
+<div class="contextual">
+  <a onclick="$('#new-relation-form').toggle(); $('#relation_issue_to_id').focus(); return false;" href="#">Add</a>
+</div>
+
+<p><strong>Related issues</strong></p>
+
+
+<form id="new-relation-form" style="display: none;" class="new_relation" action="/issues/1/relations" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" value="✓" type="hidden">
+
+
+<p><select onchange="setPredecessorFieldsVisibility();" name="relation[relation_type]" id="relation_relation_type"><option selected="selected" value="relates">Related to</option>
+<option value="duplicates">Is duplicate of</option>
+<option value="duplicated">Has duplicate</option>
+<option value="blocks">Blocks</option>
+<option value="blocked">Blocked by</option>
+<option value="precedes">Precedes</option>
+<option value="follows">Follows</option>
+<option value="copied_to">Copied to</option>
+<option value="copied_from">Copied from</option></select>
+Issue #<input size="10" name="relation[issue_to_id]" id="relation_issue_to_id" class="ui-autocomplete-input autocomplete" autocomplete="off" type="text">
+<span id="predecessor_fields" style="display:none;">
+Delay: <input size="3" name="relation[delay]" id="relation_delay" type="text"> days
+</span>
+<input name="commit" value="Add" type="submit">
+<a href="#" onclick='$("#new-relation-form").hide();; return false;'>Cancel</a>
+</p>
+
+<script>
+//<![CDATA[
+observeAutocompleteField('relation_issue_to_id', '/issues/auto_complete?issue_id=1&project_id=project')
+//]]>
+</script>
+
+<script>
+//<![CDATA[
+setPredecessorFieldsVisibility();
+//]]>
+</script>
+
+</form>
+</div>
+
+</div>
+
+
+<div id="history">
+<h3>History</h3>
+  <div id="change-1" class="journal has-details">
+    <div id="note-1">
+    <h4><a href="#note-1" class="journal-link">#1</a>
+    
+    Updated by <a class="user active" a href="#">Redmine Admin</a> <a title="01/09/2018 02:27 PM" a href="#">13 minutes</a> ago
+    <span id="journal-1-private_notes" class=""></span></h4>
+
+    <ul class="details">
+       <li><strong>Status</strong> changed from <i>New</i> to <i>In Progress</i></li>
+    </ul>
+    
+    </div>
+  </div>
+  
+  <div id="change-2" class="journal has-notes">
+    <div id="note-2">
+    <h4><a href="#note-2" class="journal-link">#2</a>
+    
+    Updated by <a class="user active" a href="#">Redmine Admin</a> <a title="01/09/2018 02:31 PM" a href="#">9 minutes</a> ago
+    <span id="journal-2-private_notes" class=""></span></h4>
+
+    <div id="journal-2-notes" class="wiki editable"><div class="contextual"><a title="Quote" class="icon-only icon-comment" data-remote="true" rel="nofollow" data-method="post" a href="#">Quote</a> <a title="Edit" class="icon-only icon-edit" data-remote="true" data-method="get" a href="#">Edit</a> <a data-confirm="Are you sure?" title="Delete" class="icon-only icon-del" data-remote="true" rel="nofollow" data-method="put" a href="#">Delete</a></div><p><strong><span style="color:red;">Let's try scroll down.</span></strong><br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓</p></div>
+    </div>
+  </div>
+  
+  <div id="change-3" class="journal has-notes">
+    <div id="note-3">
+    <h4><a href="#note-3" class="journal-link">#3</a>
+    
+    Updated by <a class="user active" a href="#">Redmine Admin</a> <a title="01/09/2018 02:39 PM" a href="#">less than a minute</a> ago
+    <span id="journal-3-private_notes" class=""></span></h4>
+
+    <div id="journal-3-notes" class="wiki editable"><div class="contextual"><a title="Quote" class="icon-only icon-comment" data-remote="true" rel="nofollow" data-method="post" a href="#">Quote</a> <a title="Edit" class="icon-only icon-edit" data-remote="true" data-method="get" a href="#">Edit</a> <a data-confirm="Are you sure?" title="Delete" class="icon-only icon-del" data-remote="true" rel="nofollow" data-method="put" a href="#">Delete</a></div><p><strong>Let's see the top of the screen!</strong><br>A fixed header is displayed!</p>
+
+
+	<p>This plugin will display the header at the top of the screen when scrolling like this.</p>
+
+
+	<p>Please try using this plugin! Enjoy!<br><a href="https://github.com/YujiSoftware/redmine-fixed-header" class="external">Redmine Fixed Header plugin - GitHub</a></p></div>
+    </div>
+  </div>
+  
+
+
+</div>
+
+
+<div style="clear: both;"></div>
+<div class="contextual">
+<a onclick='showAndScrollTo("update", "issue_notes"); return false;' class="icon icon-edit" a href="#">Edit</a>
+<a class="icon icon-time-add" a href="#">Log time</a>
+<a class="issue-1-watcher icon icon-fav-off" data-remote="true" rel="nofollow" data-method="post" a href="#">Watch</a>
+<a class="icon icon-copy" a href="#">Copy</a>
+<a data-confirm="Are you sure you want to delete the selected issue(s)?" class="icon icon-del" rel="nofollow" data-method="delete" a href="#">Delete</a>
+</div>
+
+
+<div style="clear: both;"></div>
+  <div id="update" style="display:none;">
+  <h3>Edit</h3>
+  <form id="issue-form" class="edit_issue" enctype="multipart/form-data" action="/issues/1" accept-charset="UTF-8" method="post"><input name="utf8" value="✓" type="hidden"><input name="_method" value="patch" type="hidden"><input name="authenticity_token" value="Qf1aTrzaIl1wOVcAKQjO3PEVI8f/kX1Tz90/19j5BswiJQEXqm7RTWD+5O3L3SBK+RUT8F/jRXYI2BfcxxVK8w==" type="hidden">
+    
+    
+    <div class="box filedroplistner">
+        <fieldset class="tabular"><legend>Change properties</legend>
+        <div id="all_attributes">
+        
+
+<input name="form_update_triggered_by" id="form_update_triggered_by" value="" type="hidden">
+
+
+<p id="issue_is_private_wrap">
+  <input name="issue[is_private]" value="0" type="hidden"><input value="1" name="issue[is_private]" id="issue_is_private" type="checkbox"><label class="inline" for="issue_is_private" id="issue_is_private_label">Private</label>
+</p>
+
+<p><label for="issue_project_id">Project<span class="required"> *</span></label><select onchange="updateIssueFrom('/issues/1/edit.js', this)" name="issue[project_id]" id="issue_project_id"><option value="1" selected="selected">Project</option></select></p>
+
+<p><label for="issue_tracker_id">Tracker<span class="required"> *</span></label><select onchange="updateIssueFrom('/issues/1/edit.js', this)" name="issue[tracker_id]" id="issue_tracker_id"><option value="1">Bug</option>
+<option selected="selected" value="2">Feature</option>
+<option value="3">Support</option></select></p>
+
+<p><label for="issue_subject">Subject<span class="required"> *</span></label><input size="80" maxlength="255" value="Redmine Fixed Header plugin" name="issue[subject]" id="issue_subject" type="text"></p>
+
+<p>
+  <label for="issue_description">Description</label>
+  <a href="#" onclick='$(this).hide(); $("#issue_description_and_toolbar").show(); return false;'><span class="icon icon-edit">Edit</span></a>
+  <span id="issue_description_and_toolbar" style="display:none">
+    <div class="jstElements"><button type="button" tabindex="200" class="jstb_strong" title="Strong"><span>Strong</span></button><button type="button" tabindex="200" class="jstb_em" title="Italic"><span>Italic</span></button><button type="button" tabindex="200" class="jstb_ins" title="Underline"><span>Underline</span></button><button type="button" tabindex="200" class="jstb_del" title="Deleted"><span>Deleted</span></button><button type="button" tabindex="200" class="jstb_code" title="Inline Code"><span>Inline Code</span></button><span id="space1" class="jstSpacer">&nbsp;</span><button type="button" tabindex="200" class="jstb_h1" title="Heading 1"><span>Heading 1</span></button><button type="button" tabindex="200" class="jstb_h2" title="Heading 2"><span>Heading 2</span></button><button type="button" tabindex="200" class="jstb_h3" title="Heading 3"><span>Heading 3</span></button><span id="space2" class="jstSpacer">&nbsp;</span><button type="button" tabindex="200" class="jstb_ul" title="Unordered list"><span>Unordered list</span></button><button type="button" tabindex="200" class="jstb_ol" title="Ordered list"><span>Ordered list</span></button><span id="space3" class="jstSpacer">&nbsp;</span><button type="button" tabindex="200" class="jstb_bq" title="Quote"><span>Quote</span></button><button type="button" tabindex="200" class="jstb_unbq" title="Remove Quote"><span>Remove Quote</span></button><button type="button" tabindex="200" class="jstb_pre" title="Preformatted text"><span>Preformatted text</span></button><button type="button" tabindex="200" class="jstb_precode" title="Highlighted code"><span>Highlighted code</span></button><span id="space4" class="jstSpacer">&nbsp;</span><button type="button" tabindex="200" class="jstb_link" title="Link to a Wiki page"><span>Link to a Wiki page</span></button><button type="button" tabindex="200" class="jstb_img" title="Image"><span>Image</span></button><span id="space5" class="jstSpacer">&nbsp;</span><button type="button" tabindex="200" class="jstb_help" title="Help"><span>Help</span></button></div><div class="jstEditor"><textarea cols="60" rows="10" class="wiki-edit" name="issue[description]" id="issue_description">This is a Redmine plugin that displays a fixed header at the top of the screen when scrolling down.</textarea></div>
+</span></p>
+<script>
+//<![CDATA[
+var wikiToolbar = new 
+jsToolBar(document.getElementById('issue_description')); 
+wikiToolbar.setHelpLink('/help/en/wiki_syntax_textile.html'); 
+wikiToolbar.draw();
+//]]>
+</script>
+
+<div id="attributes" class="attributes">
+  
+
+<div class="splitcontent">
+<div class="splitcontentleft">
+<p><label for="issue_status_id">Status<span class="required"> *</span></label><select onchange="updateIssueFrom('/issues/1/edit.js', this)" name="issue[status_id]" id="issue_status_id"><option value="1">New</option>
+<option selected="selected" value="2">In Progress</option>
+<option value="3">Resolved</option>
+<option value="4">Feedback</option>
+<option value="5">Closed</option>
+<option value="6">Rejected</option></select></p>
+
+
+<p><label for="issue_priority_id">Priority<span class="required"> *</span></label><select name="issue[priority_id]" id="issue_priority_id"><option value="1">Low</option>
+<option selected="selected" value="2">Normal</option>
+<option value="3">High</option>
+<option value="4">Urgent</option>
+<option value="5">Immediate</option></select></p>
+
+<p><label for="issue_assigned_to_id">Assignee</label><select name="issue[assigned_to_id]" id="issue_assigned_to_id"><option value="" selected="selected">&nbsp;</option>
+<option value="1">&lt;&lt; me &gt;&gt;</option><option value="1">Redmine Admin</option></select></p>
+
+
+</div>
+
+<div class="splitcontentright">
+<p id="parent_issue"><label for="issue_parent_issue_id">Parent task</label><input size="10" name="issue[parent_issue_id]" id="issue_parent_issue_id" class="ui-autocomplete-input autocomplete" autocomplete="off" type="text"></p>
+<script>
+//<![CDATA[
+observeAutocompleteField('issue_parent_issue_id', '/issues/auto_complete?issue_id=1&project_id=project&scope=tree&status=o')
+//]]>
+</script>
+
+<p id="start_date_area">
+  <label for="issue_start_date">Start date</label><input size="10" value="2018-01-01" name="issue[start_date]" id="issue_start_date" class="date" type="date">
+  <script>
+//<![CDATA[
+$(function() { $('#issue_start_date').addClass('date').datepickerFallback(datepickerOptions); });
+//]]>
+</script>
+</p>
+
+<p id="due_date_area">
+  <label for="issue_due_date">Due date</label><input size="10" name="issue[due_date]" id="issue_due_date" class="date" type="date">
+  <script>
+//<![CDATA[
+$(function() { $('#issue_due_date').addClass('date').datepickerFallback(datepickerOptions); });
+//]]>
+</script>
+</p>
+
+<p><label for="issue_estimated_hours">Estimated time</label><input size="3" name="issue[estimated_hours]" id="issue_estimated_hours" type="text"> Hours</p>
+
+<p><label for="issue_done_ratio">% Done</label><select name="issue[done_ratio]" id="issue_done_ratio"><option selected="selected" value="0">0 %</option>
+<option value="10">10 %</option>
+<option value="20">20 %</option>
+<option value="30">30 %</option>
+<option value="40">40 %</option>
+<option value="50">50 %</option>
+<option value="60">60 %</option>
+<option value="70">70 %</option>
+<option value="80">80 %</option>
+<option value="90">90 %</option>
+<option value="100">100 %</option></select></p>
+</div>
+</div>
+
+
+
+
+
+
+
+</div>
+
+
+
+
+<script>
+//<![CDATA[
+
+$(document).ready(function(){
+  $("#issue_tracker_id, #issue_status_id").each(function(){
+    $(this).val($(this).find("option[selected=selected]").val());
+  });
+});
+
+//]]>
+</script>
+        </div>
+        </fieldset>
+        <fieldset class="tabular"><legend>Log time</legend>
+        
+        <div class="splitcontent">
+        <div class="splitcontentleft">
+        <p><label for="time_entry_hours">Spent time</label><input size="6" name="time_entry[hours]" id="time_entry_hours" type="text"> Hours</p>
+        </div>
+        <div class="splitcontentright">
+        <p><label for="time_entry_activity_id">Activity</label><select name="time_entry[activity_id]" id="time_entry_activity_id"><option value="" selected="selected">--- Please select ---</option>
+<option value="8">Design</option>
+<option value="9">Development</option></select></p>
+        </div>
+        </div>
+        <p><label for="time_entry_comments">Comment</label><input size="60" name="time_entry[comments]" id="time_entry_comments" type="text"></p>
+    </fieldset>
+      <fieldset><legend>Notes</legend>
+      <div class="jstElements"><button type="button" tabindex="200" class="jstb_strong" title="Strong"><span>Strong</span></button><button type="button" tabindex="200" class="jstb_em" title="Italic"><span>Italic</span></button><button type="button" tabindex="200" class="jstb_ins" title="Underline"><span>Underline</span></button><button type="button" tabindex="200" class="jstb_del" title="Deleted"><span>Deleted</span></button><button type="button" tabindex="200" class="jstb_code" title="Inline Code"><span>Inline Code</span></button><span id="space1" class="jstSpacer">&nbsp;</span><button type="button" tabindex="200" class="jstb_h1" title="Heading 1"><span>Heading 1</span></button><button type="button" tabindex="200" class="jstb_h2" title="Heading 2"><span>Heading 2</span></button><button type="button" tabindex="200" class="jstb_h3" title="Heading 3"><span>Heading 3</span></button><span id="space2" class="jstSpacer">&nbsp;</span><button type="button" tabindex="200" class="jstb_ul" title="Unordered list"><span>Unordered list</span></button><button type="button" tabindex="200" class="jstb_ol" title="Ordered list"><span>Ordered list</span></button><span id="space3" class="jstSpacer">&nbsp;</span><button type="button" tabindex="200" class="jstb_bq" title="Quote"><span>Quote</span></button><button type="button" tabindex="200" class="jstb_unbq" title="Remove Quote"><span>Remove Quote</span></button><button type="button" tabindex="200" class="jstb_pre" title="Preformatted text"><span>Preformatted text</span></button><button type="button" tabindex="200" class="jstb_precode" title="Highlighted code"><span>Highlighted code</span></button><span id="space4" class="jstSpacer">&nbsp;</span><button type="button" tabindex="200" class="jstb_link" title="Link to a Wiki page"><span>Link to a Wiki page</span></button><button type="button" tabindex="200" class="jstb_img" title="Image"><span>Image</span></button><span id="space5" class="jstSpacer">&nbsp;</span><button type="button" tabindex="200" class="jstb_help" title="Help"><span>Help</span></button></div><div class="jstEditor"><textarea cols="60" rows="10" class="wiki-edit" name="issue[notes]" id="issue_notes"></textarea></div>
+      <script>
+//<![CDATA[
+var wikiToolbar = new jsToolBar(document.getElementById('issue_notes'));
+ wikiToolbar.setHelpLink('/help/en/wiki_syntax_textile.html'); 
+wikiToolbar.draw();
+//]]>
+</script>
+
+      <input name="issue[private_notes]" value="0" type="hidden"><input value="1" name="issue[private_notes]" id="issue_private_notes" type="checkbox"> <label for="issue_private_notes">Private notes</label>
+
+      
+      </fieldset>
+
+      <fieldset><legend>Files</legend>
+
+        <div id="new-attachments" style="display:inline-block;">
+          
+<span class="attachments_form">
+  <span class="attachments_fields">
+  </span>
+  <span class="add_attachment" style="">
+    <input name="attachments[dummy][file]" class="file_selector filedrop" multiple="multiple" onchange="addInputFiles(this);" data-max-file-size="5242880" data-max-file-size-message="This file cannot be uploaded because it exceeds the maximum allowed file size (5 MB)" data-max-concurrent-uploads="2" data-upload-path="/uploads.js" data-param="attachments" data-description="true" data-description-placeholder="Optional description" type="file">
+    (Maximum size: 5 MB)
+  </span>
+</span>
+
+
+        </div>
+      </fieldset>
+    </div>
+
+    <input value="3" name="issue[lock_version]" id="issue_lock_version" type="hidden">
+    <input name="last_journal_id" id="last_journal_id" value="3" type="hidden">
+    <input name="commit" value="Submit" type="submit">
+    <a href="#" onclick='submitPreview("/issues/preview/edit/1?project_id=project", "issue-form", "preview"); return false;' accesskey="r">Preview</a>
+    | <a onclick="$('#update').hide(); return false;" a href="#">Cancel</a>
+
+    
+    
+    <input name="issue_position" id="issue_position" value="1" type="hidden">
+    <input name="issue_count" id="issue_count" value="1" type="hidden">
+</form>
+<div id="preview" class="wiki"></div>
+
+  </div>
+
+<p class="other-formats">Also available in:  <span><a class="atom" rel="nofollow" a href="#">Atom</a></span>
+  <span><a class="pdf" rel="nofollow" a href="#">PDF</a></span>
+</p>
+
+
+
+
+
+        
+        <div style="clear:both;"></div>
+    <div id="context-menu" style="display:none;"></div></div>
+</div>
+</div>
+
+<div id="ajax-indicator" style="display:none;"><span>Loading...</span></div>
+<div id="ajax-modal" style="display:none;"></div>
+
+<div id="footer">
+  <div class="bgl"><div class="bgr">
+    Powered by <a href="https://www.redmine.org/">Redmine</a> © 2006-2017 Jean-Philippe Lang
+  </div></div>
+</div>
+</div>
+</div>
+
+
+
+<ul class="ui-autocomplete ui-front ui-menu ui-widget ui-widget-content" id="ui-id-1" tabindex="0" style="display: none;"></ul><span role="status" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></span><ul class="ui-autocomplete ui-front ui-menu ui-widget ui-widget-content" id="ui-id-2" tabindex="0" style="display: none;"></ul><span role="status" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></span></body></html>
