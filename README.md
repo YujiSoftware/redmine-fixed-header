@@ -1,12 +1,14 @@
-Redmine Fixed Header plugin
-====================
+# Redmine Fixed Header plugin
 
-This is a plugin for Redmine to show fixed header in issue page.
+This is a plugin for Redmine to show fixed header in issue page.  
 
 ![Capture](http://hp.vector.co.jp/authors/VA049605/etc/redmine-fixed-header2.png) 
 
-Installation
---------------------
+## Demo
+
+**[Online demo page](http://yujisoftware.github.io/redmine-fixed-header/demo.html "Demo page")**
+
+## Installation
 
 Install the plugin in your Redmine plugins directory, clone this repository as `redmine_fixed_header`:
 
@@ -22,7 +24,6 @@ If git is not installed, then download a zip, and move to your Redmine plugins d
 
 And restart your http server.
 
-Requirement
---------------------
+## Requirement
 
 * Redmine 2.1 - 2.6, 3.x or later
