@@ -9,7 +9,7 @@ module RedmineFixedHeader
         end
       end
 
-      def enabled_fixed_header; self[:enabled_fixed_header] || '0'; end
+      def enabled_fixed_header; self[:enabled_fixed_header] || '1'; end
       def enabled_fixed_header=(value); self[:enabled_fixed_header]=value; end
 
     end
