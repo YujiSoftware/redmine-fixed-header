@@ -1,3 +1,4 @@
+<% if User.current.logged? && User.current.pref.enabled_fixed_header.to_i>0 %>
 <div id="fixed-header" class="issue" style="display: none;">
   <p><%= @issue.tracker %> #<%= @issue.id %> <%= ("( " + @issue.status.name + " )") unless issue.status.nil? %></p>
   <h3><%= @issue.subject %></h3>
@@ -77,3 +78,4 @@
     });
   })();
 </script>
+<% end %>
