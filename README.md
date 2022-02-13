@@ -26,4 +26,4 @@ And restart your http server.
 
 ## Requirement
 
-* Redmine 2.1 - 2.6, 3.x or later
+* Redmine 2.1 - 2.6, 3.x, 4.x or later
