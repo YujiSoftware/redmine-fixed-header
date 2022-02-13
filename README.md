@@ -24,6 +24,11 @@ If git is not installed, then download a zip, and move to your Redmine plugins d
 
 And restart your http server.
 
+## Preferences
+
+In "My account" page, you can show / hide fixed header for each user.
+(Contributed by @paolobattistella)
+
 ## Requirement
 
 * Redmine 2.1 - 2.6, 3.x, 4.x or later
